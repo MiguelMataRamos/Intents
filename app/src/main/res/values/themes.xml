@@ -5,5 +5,6 @@
         <item name="colorPrimary">@color/black</item>
     </style>
 
+
     <style name="Theme.Intents" parent="Base.Theme.Intents" />
 </resources>
