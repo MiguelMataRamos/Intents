@@ -4,6 +4,8 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -12,6 +14,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var texto = findViewById<TextView>(R.id.mail)
+        var buscar = findViewById<EditText>(R.id.search)
+        var boton = findViewById<Button>(R.id.btn)
 
         texto.setOnClickListener {
             val intent = Intent(Intent.ACTION_SENDTO)
@@ -23,6 +27,13 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(intent)
 
+        }
+
+        boton.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse("https://www.google.com/search?q=${buscar.text.toString()}")
+
+            startActivity(intent)
         }
 
 
