@@ -67,6 +67,9 @@ class MainActivity : AppCompatActivity() {
             intent.data = Uri.parse("tel:")
 
             startActivity(intent)
+        }else if (item.itemId == R.id.actionCamara){
+            val intent = Intent("android.media.action.IMAGE_CAPTURE")
+            startActivity(intent)
         }
 
         return super.onOptionsItemSelected(item)

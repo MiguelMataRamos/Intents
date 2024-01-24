@@ -5,18 +5,25 @@
         android:id="@+id/actionBuscar"
         android:icon="@drawable/lupa"
         android:title="Buscar en Google"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
     <item
         android:id="@+id/actionMail"
         android:icon="@drawable/mail"
         android:title="Mandar correo"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
 
     <item
         android:id="@+id/actionLlamar"
         android:title="Llamar"
         android:icon="@drawable/llamar"
-        app:showAsAction="ifRoom"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/actionCamara"
+        android:title="Abrir cámara"
+        android:icon="@drawable/camara"
+        app:showAsAction="always"
         />
 
 
