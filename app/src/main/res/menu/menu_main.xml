@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/actionBuscar"
+        android:icon="@drawable/lupa"
+        android:title="Buscar en Google"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/actionMail"
+        android:icon="@drawable/mail"
+        android:title="Mandar correo"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/actionLlamar"
+        android:title="Llamar"
+        android:icon="@drawable/llamar"
+        app:showAsAction="ifRoom"
+        />
+
+
+</menu>
